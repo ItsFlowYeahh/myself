@@ -1,13 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const client2 = new Discord.Client();
 
 var prefix = 'f!';
 var token = 'NTI2NTQ2NDg5MTg3NzYyMjEy.DxpdCQ.cY3XdE8FvJe5mMRbtUaJ0zigWNk';
-var token2 = 'NTE2MjQxNTU1MzQ3MjEwMjQy.Dtwzbw.ynXtdORu_YEu5ReoyZ_Ib5HZvUY';
 
 client.login(token)
-client2.login(token2)
 
 client.on('ready' , function() {
 	client.user.setActivity("Coder | Flow [CMT]", {type: "STREAMING"});
@@ -156,6 +153,13 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+	if(message.content === prefix + "cmbsrv"){
+		message.channel.send(client.guilds.map(r => r.name + `  |  **${r.memberCount}** membres` ))
+		console.log("reussi")
+	}
+});
+
+client.on('message', message => {
 	if(message.content === prefix + "infosrv"){
 		var servIcon = message.guild.iconURL;
 		var servEmbed = new Discord.RichEmbed()
@@ -176,69 +180,6 @@ client.on('message', message => {
 
 client.on('message', message => {
 	if(message.content === "raid"){
-		message.channel.send("Raid by Globadis Network https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network https://discord.gg/8ScBy3G")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid by Globadis Network @everyone https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network @everyone https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network @everyone https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network @everyone https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network @everyone https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network @everyone https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network @everyone https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network @everyone https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network @everyone https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network @everyone https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network @everyone https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network @everyone https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network @everyone https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network @everyone https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network @everyone https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network @everyone https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network @everyone https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network @everyone https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network @everyone https://discord.gg/8ScBy3G")
-		message.channel.send("Raid by Globadis Network @everyone https://discord.gg/8ScBy3G")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("Raid raid eco+ bro")
-		message.channel.send("raid")
-		message.delete()
-		console.log("-1 fdp")
-	}
-});
-
-client2.on('message', message => {
-	if(message.content === "raid2"){
 		message.channel.send("Raid by Globadis Network https://discord.gg/8ScBy3G")
 		message.channel.send("Raid by Globadis Network https://discord.gg/8ScBy3G")
 		message.channel.send("Raid by Globadis Network https://discord.gg/8ScBy3G")
