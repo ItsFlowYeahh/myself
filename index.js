@@ -154,7 +154,11 @@ client.on('message', message => {
 
 client.on('message', message => {
 	if(message.content === prefix + "cmbsrv"){
+		var msg = await message.channel.send("Attends ptn...")
+		message.channel.send(msg)
+		
 		message.channel.send(client.guilds.map(r => r.name + `  |  **${r.memberCount}** membres` ))
+		message.delete()
 		console.log("reussi")
 	}
 });
